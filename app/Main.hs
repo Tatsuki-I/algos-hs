@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import Sort.QuickSort
 
 main :: IO ()
-main = someFunc
+main = print "hello"
