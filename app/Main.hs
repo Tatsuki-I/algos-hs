@@ -1,7 +1,6 @@
 module Main where
 
-import Sort.InsertSort
+import Sort.InsertionSort
 
 main :: IO ()
-main = putStrLn $ insertSort []
---main = print $ insertSort [6,5,4,3,2,1]
+main = print (insertionSort [6, 5, 4, 3, 2, 1])

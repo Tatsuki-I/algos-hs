@@ -16,7 +16,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Sort.QuickSort
-                     , Sort.InsertSort
+                     , Sort.InsertionSort
                      , Sort.SelectionSort
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010

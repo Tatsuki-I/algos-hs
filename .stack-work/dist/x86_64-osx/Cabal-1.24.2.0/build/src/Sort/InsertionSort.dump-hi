@@ -1,18 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-14 10:19:43.710988 UTC
+2017-07-14 10:21:46.008854 UTC
 
-interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.InsertSort 8002
-  interface hash: f8b0dca2aac65ff2fdff0dc463757861
-  ABI hash: 1d32d06a01712b9cb8e6c70e20f1b62b
-  export-list hash: 171591d0de19db937fc6f28d305277e1
+interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.InsertionSort 8002
+  interface hash: 6d10b8c95cdc24541e0852272142a2b5
+  ABI hash: 052e3f10a109304e219f2d1dc6615a3b
+  export-list hash: ed5f9185e843265627d8ccce3c050fe6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Sort.InsertSort.insertSort
+  Sort.InsertionSort.insertionSort
 module dependencies:
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
@@ -27,23 +27,23 @@ import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
-05fac0718692bfcc21b83f75c8f15156
+a7126520554a43dac791613cb52d1c27
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
-                   Sort.InsertSort.$trModule2
-                   Sort.InsertSort.$trModule1) -}
-39af2171b15ddf643833737e652323e9
+                   Sort.InsertionSort.$trModule2
+                   Sort.InsertionSort.$trModule1) -}
+f4dd2769e59c3f254ce1acf946574acd
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS "Sort.InsertSort"#) -}
-62be556c6a4270de3d9eda314b4a9b2f
+     Unfolding: (GHC.Types.TrNameS "Sort.InsertionSort"#) -}
+461c9c76550f65d3f307423176416b8a
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-3a5710e92a4b691e3ff9f30979243c38
-  insertSort :: GHC.Classes.Ord a => [a] -> [a]
+cbed7dc6bdfcc0012799a60a6cd80c1b
+  insertionSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U>,
      Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
