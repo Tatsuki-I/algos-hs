@@ -1,6 +1,6 @@
 module Sort.SelectionSort where
 
-import Data.List
+import           Data.List
 
 selectionSort :: Ord a => [a] -> [a]
 selectionSort []   = []

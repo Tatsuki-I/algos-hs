@@ -1,6 +1,6 @@
 module Sort.MergeSort where
 
-import Data.List
+import           Data.List
 
 merge :: Ord a => [a] -> [a] -> [a]
 merge [] y = y

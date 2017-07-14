@@ -1,6 +1,6 @@
 module Sort.QuickSort where
 
-import Data.List
+import           Data.List
 
 quickSort :: Ord a => [a] -> [a]
 quickSort []       = []
