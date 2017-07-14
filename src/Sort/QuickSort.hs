@@ -3,8 +3,7 @@ module Sort.QuickSort where
 import Data.List
 
 quickSort :: Ord a => [a] -> [a]
-quickSort [] = []
-quickSort (x : xs) = quickSort smaller ++ quickSort larger
+quickSort []       = []
+quickSort (x : xs) = quickSort lesser ++ [x] ++ quickSort greater
     where
-        smaller = filter (<=x) xs
-        larger = filter (>x) xs
+        (lesser, greater) = partition (<x) xs

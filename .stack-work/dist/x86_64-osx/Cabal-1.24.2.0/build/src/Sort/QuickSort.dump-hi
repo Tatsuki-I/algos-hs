@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-14 01:55:37.4776 UTC
+2017-07-14 09:57:39.959812 UTC
 
 interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.QuickSort 8002
-  interface hash: 96e31d779c15c664a20669c051d0e54a
-  ABI hash: 453e76f15d31a0953d5d606a3074af6b
+  interface hash: 478f4775a01c8f5e98de44e8a9d910d2
+  ABI hash: 63c85ae5b00994a8c1503cdfc2039bb1
   export-list hash: da0b5008b6da3c2bddef0bf9da2a9026
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
@@ -23,8 +23,8 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
-import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 477ce75dce403d4e228eeb61aefe6095
@@ -42,10 +42,10 @@ a6aa33d87909a7c8f9553e28606b8877
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-dbacb48425837cb258fe92e1c6442de0
+1d1c7836fb8117f2224a75764a0232cb
   quickSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U> -}
+     Strictness: <L,U(A,A,C(C1(U)),A,A,A,A,A)><S,1*U> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

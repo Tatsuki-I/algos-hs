@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-14 03:11:51.131421 UTC
+2017-07-14 10:12:41.475244 UTC
 
 interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.InsertSort 8002
-  interface hash: bbcc9189116ca678fdcf4420caa7fb6a
-  ABI hash: 40e62575a646759431e9d1d6902b252f
+  interface hash: 46598c0a9fa051658d4a6596496b21b4
+  ABI hash: c8a43123973ff88f7370b745ff230ce3
   export-list hash: 171591d0de19db937fc6f28d305277e1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
@@ -22,6 +22,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
@@ -41,10 +42,31 @@ import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-0e9827207c8e0d6b8f85c44399b3a384
+99ed4b25a75656d0d74995917908c789
   insertSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U> -}
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> GHC.Types.[] @ a
+                   : ipv ipv1
+                   -> let {
+                        lvl :: a -> a -> GHC.Types.Ordering = GHC.Classes.compare @ a $dOrd
+                      } in
+                      letrec {
+                        go :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds1 :: [a]) ->
+                          case ds1 of wild1 {
+                            [] -> GHC.Types.[] @ a
+                            : y ys
+                            -> case Data.OldList.$winsertBy
+                                      @ a
+                                      lvl
+                                      y
+                                      (go ys) of ww { (#,#) ww1 ww2 ->
+                               GHC.Types.: @ a ww1 ww2 } }
+                      } in
+                      go wild }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
