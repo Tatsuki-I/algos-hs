@@ -1,18 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-14 03:11:51.131421 UTC
+2017-07-14 03:14:56.673333 UTC
 
-interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.InsertSort 8002
-  interface hash: bbcc9189116ca678fdcf4420caa7fb6a
-  ABI hash: 40e62575a646759431e9d1d6902b252f
-  export-list hash: 171591d0de19db937fc6f28d305277e1
+interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.SelectionSort 8002
+  interface hash: f04eb46ad24d17f153fe4c7649d2eb2e
+  ABI hash: 2a292a1cc2aca46ca25883dacedea4ad
+  export-list hash: 0a734bd6b2bafe0c20fd5ae6d7c1c5f6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Sort.InsertSort.insertSort
+  Sort.SelectionSort.selectionSort
 module dependencies:
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
@@ -22,29 +22,30 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
-05fac0718692bfcc21b83f75c8f15156
+d1193a37ab749daaf7ccbf239c849655
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
-                   Sort.InsertSort.$trModule2
-                   Sort.InsertSort.$trModule1) -}
-39af2171b15ddf643833737e652323e9
+                   Sort.SelectionSort.$trModule2
+                   Sort.SelectionSort.$trModule1) -}
+2cec801783f3684a5714ce357459b70b
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS "Sort.InsertSort"#) -}
-62be556c6a4270de3d9eda314b4a9b2f
+     Unfolding: (GHC.Types.TrNameS "Sort.SelectionSort"#) -}
+94313a2d5401effaeb5e719658cf4371
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-0e9827207c8e0d6b8f85c44399b3a384
-  insertSort :: GHC.Classes.Ord a => [a] -> [a]
+148698d2d73d504d3ff08dc43a9f6520
+  selectionSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U> -}
+     Strictness: <L,U(U(C(C1(U)),A),A,A,A,A,A,A,U)><S,1*U> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

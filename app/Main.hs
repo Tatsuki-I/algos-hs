@@ -2,6 +2,7 @@ module Main where
 
 import Sort.QuickSort
 import Sort.InsertSort
+import Sort.SelectionSort
 
 main :: IO ()
-main = print $ insertSort [6,5,4,3,2,1]
+main = print $ selectionSort [6,5,4,3,2,1]
