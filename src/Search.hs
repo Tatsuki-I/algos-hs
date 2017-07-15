@@ -26,5 +26,5 @@ binarySearch list target
         | midVal < target     = binarySearch (drop (mid + 1) list) target
         | midVal > target     = binarySearch (take mid list) target
             where
-                mid = div (length list) 2
+                mid    = div (length list) 2
                 midVal = list !! mid
