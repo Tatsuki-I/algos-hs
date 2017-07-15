@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-15 05:34:31.214973 UTC
+2017-07-15 06:27:21.25371 UTC
 
 interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Search 8002
-  interface hash: 075e110bd722dad77ad59be0c4c143d5
-  ABI hash: 31d0e2029236f59b92fbbad9dbca944c
-  export-list hash: feb8735e7684b673a019eb6075595a84
+  interface hash: 22473c85a775ded099122a31019f470b
+  ABI hash: e7a03aecd653a8e050cd9e1de9b09630
+  export-list hash: c8c21478c42f8084892753e9fd59781a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f6624f22fcdd76ed0ac6625466e2d712
   sig of: Nothing
@@ -13,12 +13,13 @@ interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Search 8002
   where
 exports:
   Search.binarySearch
+  Search.binarySearch'
+  Search.binarySearch''
   Search.isSorted
   Search.sequentialSearch
   Search.showError
-  Search.Error
   Search.SearchError{Search.Unsorted}
-module dependencies:
+module dependencies: Sort.QuickSort
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
 orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
@@ -27,6 +28,9 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
+import  -/  Sort.QuickSort 63c85ae5b00994a8c1503cdfc2039bb1
+  exports: da0b5008b6da3c2bddef0bf9da2a9026
+  quickSort 1d1c7836fb8117f2224a75764a0232cb
 import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
@@ -129,14 +133,20 @@ d7e92fda1f873ee0a3fa4e9f13754d3c
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-f9aabe4cd139be44f50305514dd2d97a
-  type Error = GHC.Base.String
 af3c9d48368088573a3bf434cbfd829d
   data SearchError = Unsorted
 92f3d2e255f141a4cde25c77448554e3
   binarySearch ::
     GHC.Classes.Ord a =>
     [a] -> a -> Data.Either.Either Search.SearchError GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,A)><S,1*U><L,U> -}
+0a8cf8ba9a34b52ecfd02e4a7fdd4a6b
+  binarySearch' :: GHC.Classes.Ord a => [a] -> a -> GHC.Types.Bool
+  {- Arity: 3,
+     Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U><L,U> -}
+23abbb1fea1f7140ae340622ebfea5c4
+  binarySearch'' :: GHC.Classes.Ord a => [a] -> a -> GHC.Types.Bool
   {- Arity: 3,
      Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,A)><S,1*U><L,U> -}
 fe71a7ad17c81a0e2092587d9a60ba37

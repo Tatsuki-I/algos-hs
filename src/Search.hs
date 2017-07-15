@@ -1,5 +1,7 @@
 module Search where
 
+import Sort.QuickSort
+
 sequentialSearch :: Eq a => [a] -> a -> Bool
 sequentialSearch [] _ = False
 sequentialSearch (x : xs) target
@@ -25,6 +27,27 @@ binarySearch list target
         | midVal == target    = Right True
         | midVal < target     = binarySearch (drop (mid + 1) list) target
         | midVal > target     = binarySearch (take mid list) target
+            where
+                mid    = div (length list) 2
+                midVal = list !! mid
+
+binarySearch' :: Ord a => [a] -> a -> Bool
+binarySearch' [] _            = False
+binarySearch' list target
+        | midVal == target    = True
+        | midVal < target     = binarySearch' (drop (mid + 1) list) target
+        | midVal > target     = binarySearch' (take mid list) target
+            where
+                mid    = div (length list) 2
+                midVal = list !! mid
+
+binarySearch'' :: Ord a => [a] -> a -> Bool
+binarySearch'' [] _           = False
+binarySearch'' list target
+        | not $ isSorted list = binarySearch'' (quickSort list) target
+        | midVal == target    = True
+        | midVal < target     = binarySearch'' (drop (mid + 1) list) target
+        | midVal > target     = binarySearch'' (take mid list) target
             where
                 mid    = div (length list) 2
                 midVal = list !! mid
