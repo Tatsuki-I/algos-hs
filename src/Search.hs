@@ -1,7 +1,5 @@
 module Search where
 
-import Data.Either
-
 sequentialSearch :: Eq a => [a] -> a -> Bool
 sequentialSearch [] _ = False
 sequentialSearch (x : xs) target
