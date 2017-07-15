@@ -7,10 +7,10 @@ sequentialSearch (x : xs) target
         | otherwise   = sequentialSearch xs target
 
 isSorted :: Ord a => [a] -> Bool
-isSorted [] = True
+isSorted []  = True
 isSorted [_] = True
 isSorted (x1 : x2 : xs)
-        | x1 <= x2 = isSorted (x2 : xs)
+        | x1 <= x2  = isSorted (x2 : xs)
         | otherwise = False
 
 data SearchError = Unsorted deriving (Show)
@@ -19,7 +19,7 @@ showError :: SearchError -> String
 showError Unsorted = "This list is unsorted."
 
 binarySearch :: Ord a => [a] -> a -> Either SearchError Bool
-binarySearch [] _ = Right False
+binarySearch [] _             = Right False
 binarySearch list target
         | not $ isSorted list = Left $ Unsorted
         | midVal == target    = Right True
