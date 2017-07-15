@@ -14,7 +14,6 @@ isSorted (x1 : x2 : xs)
         | otherwise = False
 
 data SearchError = Unsorted deriving (Show)
-type Error = String
 
 showError :: SearchError -> String
 showError Unsorted = "This list is unsorted."
