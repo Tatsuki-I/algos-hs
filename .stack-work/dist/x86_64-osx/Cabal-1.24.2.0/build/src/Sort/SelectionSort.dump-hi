@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-19 02:04:11.586939 UTC
+2017-07-20 14:56:50.843045 UTC
 
-interface algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.SelectionSort 8002
-  interface hash: e1d976e9a748c6078efed6619f9e913a
-  ABI hash: 93dcdc6bdebe2850988d68ae5f602bee
-  export-list hash: ff5510996824fe3076fb245207622a98
+interface algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54:Sort.SelectionSort 8002
+  interface hash: 47c79eabad663d7be5919bd92e183ff7
+  ABI hash: 91e47c87628415f97ecac8c60833f87c
+  export-list hash: 9949aa00f4b4455b7e47a2034039daa4
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
   sig of: Nothing
@@ -13,6 +13,8 @@ interface algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.SelectionSort 8002
   where
 exports:
   Sort.SelectionSort.selectionSort
+  Sort.SelectionSort.selectionSort'
+  Sort.SelectionSort.separateMinimum
 module dependencies:
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
@@ -27,25 +29,69 @@ import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
-d9fff6def5d804c5a425f5e040b0bd78
+5ee83e329277f2aae85f3104c61a8135
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Sort.SelectionSort.$trModule2
                    Sort.SelectionSort.$trModule1) -}
-70565c5b66bc0ccddae64da90cbf3c8d
+92c350de978c05ce5eef8b61dc9eccd8
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Sort.SelectionSort"#) -}
-3645fb2e6a38264f69e359ab55ff7306
+69b196dbd1c3c6d74e68afb37993df52
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be"#) -}
-e36f3d099b924e9fc33477273700b4d5
+                   "algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"#) -}
+f95758c074371491565550da24c5245c
   selectionSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(U(C(C1(U)),A),A,A,A,A,A,A,U)><S,1*U> -}
+d4aafa37945a40d18af7b20295d66c54
+  selectionSort' :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),A,A,A,A,A,A,U)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (b2 :: [a]) ->
+                     case Sort.SelectionSort.separateMinimum @ a $dOrd b2 of wild {
+                       GHC.Base.Nothing -> GHC.Types.[] @ a
+                       GHC.Base.Just ds
+                       -> case ds of wild1 { (,) a1 new_b ->
+                          GHC.Types.: @ a a1 (go new_b) } }
+                 } in
+                 go eta) -}
+773965255ed093ca3ca8c911551ef083
+  separateMinimum ::
+    GHC.Classes.Ord a => [a] -> GHC.Base.Maybe (a, [a])
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*C(C1(U)),A),A,A,A,A,A,A,1*U)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 case eta of wild {
+                   [] -> GHC.Base.Nothing @ (a, [a])
+                   : ipv ipv1
+                   -> GHC.Base.Just
+                        @ (a, [a])
+                        (let {
+                           x :: a
+                           = let {
+                               k :: a -> a -> a = GHC.Classes.min @ a $dOrd
+                             } in
+                             letrec {
+                               go :: [a] -> a -> a {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                               = \ (ds :: [a]) (eta1 :: a) ->
+                                 case ds of wild1 { [] -> eta1 : y ys -> go ys (k eta1 y) }
+                             } in
+                             go ipv1 ipv
+                         } in
+                         (x,
+                          Data.OldList.deleteBy
+                            @ a
+                            (GHC.Classes.== @ a (GHC.Classes.$p1Ord @ a $dOrd))
+                            x
+                            wild)) }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

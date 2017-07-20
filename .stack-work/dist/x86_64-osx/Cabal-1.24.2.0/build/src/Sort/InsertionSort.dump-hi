@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-19 02:04:11.823141 UTC
+2017-07-20 14:55:42.641433 UTC
 
-interface algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.InsertionSort 8002
-  interface hash: 8ae4d5acae78554261211d63e829a692
-  ABI hash: b674db207d84b1f7537de56e4e7a6cc9
-  export-list hash: d6e57de974ad734da215b87fbce50a25
+interface algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54:Sort.InsertionSort 8002
+  interface hash: d5fbbef64003c769191684b21aeb19ce
+  ABI hash: 1d7a3570cdfaf6804e424e1af35c4479
+  export-list hash: 02290ac3063c876e4fe02587e394935a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
   sig of: Nothing
@@ -27,22 +27,22 @@ import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
-107de584cc8cfd17747a7402ce9f1a03
+5e7c1caa75440b51bbbc4ac2fab43acf
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Sort.InsertionSort.$trModule2
                    Sort.InsertionSort.$trModule1) -}
-c9639c14c71bbe08064dc88e9c3e2fe6
+d1293da957ad83343e3218b505b31b89
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Sort.InsertionSort"#) -}
-847db5239619cec9c4dc38470012040b
+73fb4959b26f5e839048b88e20378ad1
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be"#) -}
-10ac89f6372f527552539cbc80917610
+                   "algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"#) -}
+16866605cf07d8045278ea2e083a5ad1
   insertionSort :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U>,
