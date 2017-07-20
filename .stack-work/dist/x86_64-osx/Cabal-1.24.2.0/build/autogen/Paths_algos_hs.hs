@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/bin"
-libdir     = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/lib/x86_64-osx-ghc-8.0.2/algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"
+libdir     = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/lib/x86_64-osx-ghc-8.0.2/algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"
 dynlibdir  = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/lib/x86_64-osx-ghc-8.0.2"
 datadir    = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/share/x86_64-osx-ghc-8.0.2/algos-hs-0.1.0.0"
 libexecdir = "/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/libexec"

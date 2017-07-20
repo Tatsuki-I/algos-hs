@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-15 03:23:56.994205 UTC
+2017-07-19 02:33:23.615702 UTC
 
 interface main@main:Main 8002
-  interface hash: e1f822186c84a0adf23b24b9a7727b83
-  ABI hash: 8db6dfda5ae5e1ccb31b5af527ad5f2f
-  export-list hash: 95e4ff86113482f1e058ba8bd46b93d4
+  interface hash: de273abccab2f5f51963a6a56f9a3c1c
+  ABI hash: 85d8998a71377f3a188a93c1b6729fe9
+  export-list hash: 4efc190231465edeea24608acf9dbfc0
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a58d3a9507b8f0850282c170206baa0a
   sig of: Nothing
@@ -14,15 +14,17 @@ interface main@main:Main 8002
 exports:
   Main.main
 module dependencies:
-package dependencies: algos-hs-0.1.0.0@algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P
-                      base-4.9.1.0* ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+package dependencies: algos-hs-0.1.0.0@algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be
+                      base-4.9.1.0 ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      parallel-3.2.1.1@parallel-3.2.1.1-KQJHWCcq2Ka569Stb10nhx
 orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
 family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
-import  -/  algos-hs-0.1.0.0@algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Sort.InsertionSort 052e3f10a109304e219f2d1dc6615a3b
+import  -/  algos-hs-0.1.0.0@algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.ParallelQuickSort d0dbadf92e9cab36e95d0ae241f228cf
+import  -/  algos-hs-0.1.0.0@algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.QuickSort e689de29b53034aa146617eb31db32fc
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
@@ -38,12 +40,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-d7d74d93464fc3d0ad236c7e67ebf5a8
+20456d2aa12bd5ec7f064b442033d682
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-bf597b5e4bff6748198ae68cb8320bb7
+ac88fe4260621f48654704a716c31c14
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -55,90 +57,41 @@ bf597b5e4bff6748198ae68cb8320bb7
                    Main.main2
                    GHC.Types.True
                    eta) -}
-264b80dd2590c058c67040441a95cf25
-  main10 :: GHC.Integer.Type.Integer
+6b1fb7ae91c45765caebe1baee56504f
+  main2 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
+                   Main.main3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5bf50ace82c910d76d9a9535f3c62313
+  main3 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Sort.ParallelQuickSort.parallelQuickSort
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Main.main4) -}
+ed1cd028774ae065896771b7ebb09111
+  main4 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToInteger1
+                   Main.main6
+                   Main.main5) -}
+213aca98cac1f6d3c3c61607482b62c9
+  main5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10000) -}
+7c68dbbd1e1849f5803738de601a4aa2
+  main6 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (1) -}
-ea2d01472b2421f9c9717fcca5f5651b
-  main11 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (2) -}
-a920273fe10a2be3afadf63aa91fc60d
-  main12 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (3) -}
-6bac2389d1c39f179f715f0ddceae350
-  main13 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (4) -}
-9b788aa22bff8de272013b056f105324
-  main14 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (5) -}
-05bbd2f9019451a8711f78152d2d4096
-  main15 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (6) -}
-35062bd7aa786041a7bdd374a3fd55f5
-  main16 ::
+d449bdb2cd987aa3d018e33aec6e34ce
+  main7 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-cf9841be6cf294557927b18dcbb9ac10
-  main2 :: GHC.Base.String
-  {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
-                   Main.main3
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-a97e0d8c18d16319b9ebedd9ac800bde
-  main3 :: [GHC.Integer.Type.Integer]
-  {- Unfolding: (Sort.InsertionSort.insertionSort
-                   @ GHC.Integer.Type.Integer
-                   GHC.Integer.Type.$fOrdInteger
-                   Main.main4) -}
-08c53d707e6b8a66f9cb4d7c8f1b4e50
-  main4 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main15
-                   Main.main5) -}
-020b51011efd6f889873550f5d2c941d
-  main5 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main14
-                   Main.main6) -}
-e9c6cf8de518bb6d4d7c43aaf6f86d02
-  main6 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main13
-                   Main.main7) -}
-f0671cc59cb7076e43df12aeb5dc3272
-  main7 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main12
-                   Main.main8) -}
-0ee9e54e308b2465a2b3caab77878998
-  main8 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main11
-                   Main.main9) -}
-657253dc93775a17a10e3eef80570e9b
-  main9 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Main.main10
-                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
 parallel variables:
 parallel tycons:
-trusted: safe
+trusted: none
 require own pkg trusted: False
 

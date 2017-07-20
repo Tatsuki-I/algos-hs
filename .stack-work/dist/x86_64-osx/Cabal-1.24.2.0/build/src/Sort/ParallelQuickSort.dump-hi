@@ -1,0 +1,61 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-19 02:33:22.676215 UTC
+
+interface algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Sort.ParallelQuickSort 8002
+  interface hash: ea9304b5f63508799f197954e7f29a51
+  ABI hash: d0dbadf92e9cab36e95d0ae241f228cf
+  export-list hash: 87f996fdead5c905c57e48b927f57317
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c803e0eafbdc1e82ae48825bf3d5e598
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sort.ParallelQuickSort.forceList
+  Sort.ParallelQuickSort.parallelQuickSort
+module dependencies:
+package dependencies: base-4.9.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      parallel-3.2.1.1@parallel-3.2.1.1-KQJHWCcq2Ka569Stb10nhx
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  parallel-3.2.1.1@parallel-3.2.1.1-KQJHWCcq2Ka569Stb10nhx:Control.Parallel f51ba55db4edbaab45613077825ddd90
+9a15b6bea5ff92660c1d2603f2d0d4c3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sort.ParallelQuickSort.$trModule2
+                   Sort.ParallelQuickSort.$trModule1) -}
+f49cf1714f29684e0e2bee27a62b5ab9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sort.ParallelQuickSort"#) -}
+5a58f04347686f0c718b640e0ae0cd57
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be"#) -}
+7ec9fd1fa1032a613ceb6ee5c4eb6fc8
+  forceList :: [a] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+c96be691b746bcedee9666aad4051249
+  parallelQuickSort :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,C(C1(U)),A,A)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

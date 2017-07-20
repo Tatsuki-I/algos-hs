@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-15 06:27:21.25371 UTC
+2017-07-19 02:04:11.933022 UTC
 
-interface algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P:Search 8002
-  interface hash: 22473c85a775ded099122a31019f470b
-  ABI hash: e7a03aecd653a8e050cd9e1de9b09630
-  export-list hash: c8c21478c42f8084892753e9fd59781a
+interface algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be:Search 8002
+  interface hash: 15a3c937809db8860100595a13c5ec38
+  ABI hash: 5953616d1a5f4b02bdad8267d4506cf5
+  export-list hash: b1f68fc19edfbccafd80ffaab07a777d
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f6624f22fcdd76ed0ac6625466e2d712
   sig of: Nothing
@@ -28,9 +28,9 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
-import  -/  Sort.QuickSort 63c85ae5b00994a8c1503cdfc2039bb1
-  exports: da0b5008b6da3c2bddef0bf9da2a9026
-  quickSort 1d1c7836fb8117f2224a75764a0232cb
+import  -/  Sort.QuickSort e689de29b53034aa146617eb31db32fc
+  exports: 0d2c5ee09383c1f3dc179d5addc0a199
+  quickSort de8cb496cf29855df3defa27142af938
 import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
@@ -40,7 +40,7 @@ import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
 import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
-af3c9d48368088573a3bf434cbfd829d
+5723c3fb0711584ad632eac486fd073e
   $fShowSearchError :: GHC.Show.Show Search.SearchError
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -49,7 +49,7 @@ af3c9d48368088573a3bf434cbfd829d
                   Search.$fShowSearchError_$cshowsPrec
                   Search.$fShowSearchError_$cshow
                   Search.$fShowSearchError_$cshowList -}
-af3c9d48368088573a3bf434cbfd829d
+5723c3fb0711584ad632eac486fd073e
   $fShowSearchError1 :: Search.SearchError -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*H><L,1*U>,
      Unfolding: InlineRule (2, True, False)
@@ -62,23 +62,23 @@ af3c9d48368088573a3bf434cbfd829d
                       (n :: b)[OneShot] ->
                     GHC.Base.foldr @ GHC.Types.Char @ b c n Search.$fShowSearchError2)
                    eta }) -}
-106075f300524d0f00702113e159644d
+8e73e80363a1ecbe2c20e7d3a9ba2e6b
   $fShowSearchError2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Unsorted"#) -}
-af3c9d48368088573a3bf434cbfd829d
+5723c3fb0711584ad632eac486fd073e
   $fShowSearchError_$cshow :: Search.SearchError -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*H>,
      Unfolding: InlineRule (1, True, False)
                 (\ (x :: Search.SearchError) ->
                  case x of wild { Search.Unsorted -> Search.$fShowSearchError2 }) -}
-af3c9d48368088573a3bf434cbfd829d
+5723c3fb0711584ad632eac486fd073e
   $fShowSearchError_$cshowList ::
     [Search.SearchError] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Search.SearchError
                    Search.$fShowSearchError1) -}
-af3c9d48368088573a3bf434cbfd829d
+5723c3fb0711584ad632eac486fd073e
   $fShowSearchError_$cshowsPrec ::
     GHC.Types.Int -> Search.SearchError -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
@@ -94,76 +94,76 @@ af3c9d48368088573a3bf434cbfd829d
                       (n :: b)[OneShot] ->
                     GHC.Base.foldr @ GHC.Types.Char @ b c n Search.$fShowSearchError2)
                    eta }) -}
-71b429e95fe6c531a9f819f5dd69a56b
+836b1e924b46e1258a169f86cffeebd6
   $tc'Unsorted :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   3978931087139484933##
-                   2675501986454942944##
+                   10019145947289251629##
+                   17712504780291394777##
                    Search.$trModule
                    Search.$tc'Unsorted1) -}
-579fcaf1b9bf94e51fccf0bbf43583a6
+733089bba2bb1ed772803b8741ca9cb8
   $tc'Unsorted1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Unsorted"#) -}
-e80f1def0f30ffab4d8f13562bc0d35f
+e4682fc8021f1978ed9bf61a5f846fc9
   $tcSearchError :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   16817334741472156576##
-                   17654106948272540076##
+                   10906744368088229406##
+                   7170020337625784816##
                    Search.$trModule
                    Search.$tcSearchError1) -}
-3a1fe8cfe14fabeba5bdeb24bea79dee
+6b624b4cc3b92731e7fb715645ac91fe
   $tcSearchError1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "SearchError"#) -}
-d7e92fda1f873ee0a3fa4e9f13754d3c
+6204f994d46117f9969dc8badfaf1c02
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Search.$trModule2
                    Search.$trModule1) -}
-7ac2571ed47b3974a66703e789b9bea2
+092c20ca05bfaa9370471736e713bff0
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Search"#) -}
-392c20d05892a5cabdc0b79d0793479f
+86d3a5bf3ad6784434383dbacc5aa218
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"#) -}
-af3c9d48368088573a3bf434cbfd829d
+                   "algos-hs-0.1.0.0-8DDO7Kzo9kR4RFatZrT0be"#) -}
+5723c3fb0711584ad632eac486fd073e
   data SearchError = Unsorted
-92f3d2e255f141a4cde25c77448554e3
+7b4e1b779146cfd5c15f24d30fa4d393
   binarySearch ::
     GHC.Classes.Ord a =>
     [a] -> a -> Data.Either.Either Search.SearchError GHC.Types.Bool
   {- Arity: 3,
      Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,A)><S,1*U><L,U> -}
-0a8cf8ba9a34b52ecfd02e4a7fdd4a6b
+5afd113f02a57e25ea7ef635eaec3096
   binarySearch' :: GHC.Classes.Ord a => [a] -> a -> GHC.Types.Bool
   {- Arity: 3,
      Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U><L,U> -}
-23abbb1fea1f7140ae340622ebfea5c4
+067fad23061203ae39b851e58ec9a9e0
   binarySearch'' :: GHC.Classes.Ord a => [a] -> a -> GHC.Types.Bool
   {- Arity: 3,
      Strictness: <L,U(U(C(C1(U)),A),A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,A)><S,1*U><L,U> -}
-fe71a7ad17c81a0e2092587d9a60ba37
+2341fdc55a45fb62123f36f985eae8e3
   isSorted :: GHC.Classes.Ord a => [a] -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
      Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,1*U> -}
-0dbccd93a62f1016cb2b1940d9c4fb93
+9874c6311427abdf3537a96cc47a5f19
   sequentialSearch :: GHC.Classes.Eq a => [a] -> a -> GHC.Types.Bool
   {- Arity: 3, HasNoCafRefs,
      Strictness: <L,U(C(C1(U)),A)><S,1*U><L,U> -}
-90d4d43862709d33345fe4e7afd14618
+a8b7016c3360e3dc0baab7493aa29c4e
   showError :: Search.SearchError -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*H>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Search.SearchError) ->
                  case ds of wild { Search.Unsorted -> Search.showError1 }) -}
-74d456dd0cffecfe298c1d578e129f5d
+2fe928bec56ad9e80ca642e3b9a9fe70
   showError1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "This list is unsorted."#) -}

@@ -19,8 +19,11 @@ library
                      , Sort.InsertionSort
                      , Sort.SelectionSort
                      , Sort.MergeSort
+                     , Sort.ParallelQuickSort
                      , Search
   build-depends:       base >= 4.7 && < 5
+                     , parallel
+                     , hood
   default-language:    Haskell2010
 
 executable algos

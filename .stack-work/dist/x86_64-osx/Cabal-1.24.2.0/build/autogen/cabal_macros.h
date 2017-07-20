@@ -14,6 +14,20 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package hood-0.3 */
+#define VERSION_hood "0.3"
+#define MIN_VERSION_hood(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 0)
+
+/* package parallel-3.2.1.1 */
+#define VERSION_parallel "3.2.1.1"
+#define MIN_VERSION_parallel(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
+
 /* tool gcc-4.2.1 */
 #define TOOL_VERSION_gcc "4.2.1"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
@@ -63,7 +77,7 @@
   (major1) == 0 && (major2) <  29 || \
   (major1) == 0 && (major2) == 29 && (minor) <= 2)
 
-#define CURRENT_COMPONENT_ID "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"
+#define CURRENT_COMPONENT_ID "algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"
 
-#define CURRENT_PACKAGE_KEY "algos-hs-0.1.0.0-8t08XiJuizj41xgenO3a7P"
+#define CURRENT_PACKAGE_KEY "algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"
 

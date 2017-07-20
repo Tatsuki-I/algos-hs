@@ -1,6 +1,8 @@
 module Main where
 
-import           Sort.InsertionSort
+import           Sort.ParallelQuickSort
+import           Sort.QuickSort
 
 main :: IO ()
-main = print (insertionSort [6, 5, 4, 3, 2, 1])
+main = print (parallelQuickSort [1 .. 10000])
+--main = print (quickSort [1 .. 10000])
