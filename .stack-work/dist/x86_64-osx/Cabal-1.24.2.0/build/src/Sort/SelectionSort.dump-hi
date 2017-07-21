@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-07-20 14:56:50.843045 UTC
+2017-07-21 15:43:52.635222 UTC
 
 interface algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54:Sort.SelectionSort 8002
-  interface hash: 47c79eabad663d7be5919bd92e183ff7
-  ABI hash: 91e47c87628415f97ecac8c60833f87c
+  interface hash: 4313c97faa95dce2ffcf29e4613a60ca
+  ABI hash: 31ad76ef7260f9a5c748c4cf64f6318f
   export-list hash: 9949aa00f4b4455b7e47a2034039daa4
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c803e0eafbdc1e82ae48825bf3d5e598
@@ -24,9 +24,14 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Control.Monad.Fix 1847625fb543f2f5c2510a02760c6b1a
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Function 7aca86bfbd92366def5f260e30cb2628
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
 import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
 import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 5ee83e329277f2aae85f3104c61a8135
@@ -44,10 +49,29 @@ import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "algos-hs-0.1.0.0-4Sko5DL6jdz40iPla4bF54"#) -}
-f95758c074371491565550da24c5245c
+0a118907b9578ac8ba8707d94ab0f13c
   selectionSort :: GHC.Classes.Ord a => [a] -> [a]
-  {- Arity: 2, HasNoCafRefs,
-     Strictness: <L,U(U(C(C1(U)),A),A,A,A,A,A,A,U)><S,1*U> -}
+  {- Arity: 2, Strictness: <L,U(1*U,A,A,A,A,A,A,U)><L,U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 let {
+                   $dEq :: GHC.Classes.Eq a = GHC.Classes.$p1Ord @ a $dOrd
+                 } in
+                 let {
+                   lvl :: a -> a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq
+                 } in
+                 letrec {
+                   x :: [a] -> [a] {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x1 :: [a]) ->
+                     GHC.Types.:
+                       @ a
+                       (GHC.List.minimum @ a $dOrd x1)
+                       (x (Data.OldList.deleteBy
+                             @ a
+                             lvl
+                             (GHC.List.minimum @ a $dOrd x1)
+                             x1))
+                 } in
+                 x eta) -}
 d4aafa37945a40d18af7b20295d66c54
   selectionSort' :: GHC.Classes.Ord a => [a] -> [a]
   {- Arity: 2, HasNoCafRefs,

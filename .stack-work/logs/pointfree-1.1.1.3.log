@@ -1,0 +1,24 @@
+Configuring pointfree-1.1.1.3...
+Building pointfree-1.1.1.3...
+Preprocessing library pointfree-1.1.1.3...
+[1 of 7] Compiling Plugin.Pl.Common ( Plugin/Pl/Common.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/Common.o )
+[2 of 7] Compiling Plugin.Pl.Parser ( Plugin/Pl/Parser.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/Parser.o )
+[3 of 7] Compiling Plugin.Pl.PrettyPrinter ( Plugin/Pl/PrettyPrinter.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/PrettyPrinter.o )
+[4 of 7] Compiling Plugin.Pl.Rules  ( Plugin/Pl/Rules.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/Rules.o )
+[5 of 7] Compiling Plugin.Pl.Optimize ( Plugin/Pl/Optimize.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/Optimize.o )
+[6 of 7] Compiling Plugin.Pl.Transform ( Plugin/Pl/Transform.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Plugin/Pl/Transform.o )
+[7 of 7] Compiling Pointfree        ( Pointfree.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Pointfree.o )
+Preprocessing executable 'pointfree' for pointfree-1.1.1.3...
+[1 of 7] Compiling Plugin.Pl.Common ( Plugin/Pl/Common.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/Common.o )
+[2 of 7] Compiling Plugin.Pl.Parser ( Plugin/Pl/Parser.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/Parser.o )
+[3 of 7] Compiling Plugin.Pl.PrettyPrinter ( Plugin/Pl/PrettyPrinter.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/PrettyPrinter.o )
+[4 of 7] Compiling Plugin.Pl.Rules  ( Plugin/Pl/Rules.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/Rules.o )
+[5 of 7] Compiling Plugin.Pl.Optimize ( Plugin/Pl/Optimize.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/Optimize.o )
+[6 of 7] Compiling Plugin.Pl.Transform ( Plugin/Pl/Transform.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Plugin/Pl/Transform.o )
+[7 of 7] Compiling Main             ( Main.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree-tmp/Main.o )
+Linking .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/pointfree/pointfree ...
+Installing library in
+/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/lib/x86_64-osx-ghc-8.0.2/pointfree-1.1.1.3-4AWROPbgB8RDWVWsfc9bTA
+Installing executable(s) in
+/Users/tatsuki/GitHub/algos-hs/.stack-work/install/x86_64-osx/lts-8.22/8.0.2/bin
+Registering pointfree-1.1.1.3...
