@@ -1,8 +1,8 @@
 module Sort.SelectionSort where
 
 import           Data.List
-import Control.Monad
-import Control.Monad.Fix
+import           Control.Monad
+import           Control.Monad.Fix
 
 selectionSort :: Ord a => [a] -> [a]
 --selectionSort []   = []
