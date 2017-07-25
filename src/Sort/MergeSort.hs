@@ -5,8 +5,8 @@ import           Data.List
 merge :: Ord a => [a] -> [a] -> [a]
 merge []     y                  = y
 merge x      []                 = x
-merge (x:xs) (y:ys) | x <= y    = x: merge xs     (y:ys)
-                    | otherwise = y: merge (x:xs) ys
+merge (x:xs) (y:ys) | x <= y    = x:merge xs     (y:ys)
+                    | otherwise = y:merge (x:xs) ys
 
 halve :: [a] -> ([a], [a])
 halve list = (take lsLength list, drop lsLength list)
